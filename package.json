@@ -7,6 +7,10 @@
     "esbuild": "^0.17.19",
     "sass": "^1.62.1"
   },
+  "engines": {
+    "node": "^18.15.0",
+    "yarn": "^1.22.18"
+  },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
     "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
